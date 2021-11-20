@@ -1,0 +1,52 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+  <!-- Position Column -->
+  <!-- <ng-container matColumnDef="txn_date">
+    <th mat-header-cell *matHeaderCellDef> no. </th>
+    <td mat-cell *matCellDef="let element"> {{element.txn_date}} </td>
+  </ng-container> -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="province">
+    <th mat-header-cell *matHeaderCellDef> จังหวัด </th>
+    <td mat-cell *matCellDef="let element"> {{element.province}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="new_case">
+    <th mat-header-cell *matHeaderCellDef> ผู้ติดเชื้อรายใหม่ </th>
+    <td mat-cell *matCellDef="let element"> {{element.new_case}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="total_case">
+    <th mat-header-cell *matHeaderCellDef>ผู้ติดเชื้อรวม </th>
+    <td mat-cell *matCellDef="let element"> {{element.total_case}} </td>
+  </ng-container>
+  <ng-container matColumnDef="new_case_excludeabroad">
+    <th mat-header-cell *matHeaderCellDef> new_case_excludeabroad </th>
+    <td mat-cell *matCellDef="let element"> {{element.new_case_excludeabroad}} </td>
+  </ng-container>
+  <ng-container matColumnDef="total_case_excludeabroad">
+    <th mat-header-cell *matHeaderCellDef> total_case_excludeabroad </th>
+    <td mat-cell *matCellDef="let element"> {{element.total_case_excludeabroad}} </td>
+  </ng-container>
+  <ng-container matColumnDef="new_death">
+    <th mat-header-cell *matHeaderCellDef> ผู้ติดเสียชีวิตรายใหม่ </th>
+    <td mat-cell *matCellDef="let element"> {{element.new_death}} </td>
+  </ng-container>
+  <ng-container matColumnDef="total_death">
+    <th mat-header-cell *matHeaderCellDef> ผู้ติดเสียชีวิตรวม </th>
+    <td mat-cell *matCellDef="let element"> {{element.total_death}} </td>
+  </ng-container>
+  <ng-container matColumnDef="update_date">
+    <th mat-header-cell *matHeaderCellDef> total_case </th>
+    <td mat-cell *matCellDef="let element"> {{element.update_date}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
