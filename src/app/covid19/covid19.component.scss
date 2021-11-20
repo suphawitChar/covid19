@@ -1,25 +1,24 @@
-.demo-table {
+
+table {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: larger;
+  border-collapse: collapse;
+  border: 2px dashed;
+  text-align: center;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mat-column-demo-position {
-  width: 32px;
-  border-right: 1px solid currentColor;
-  padding-right: 24px;
+.Column{
   text-align: center;
+  font-size: medium;
 }
-
-.mat-column-demo-name {
-  padding-left: 16px;
-  font-size: 20px;
+table, th, td {
+  border: 1px solid black;
 }
-
-.mat-column-demo-weight {
-  font-style: italic;
-}
-
-.mat-column-demo-symbol {
-  width: 32px;
-  text-align: center;
+th {
+  color: rgb(92, 21, 21);
   font-weight: bold;
 }
+

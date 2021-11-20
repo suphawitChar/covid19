@@ -1,1 +1,51 @@
-<app-covid19></app-covid19>
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+    <p>โรคติดเชื้อไวรัสโคโรนา 2019 (COVID-19)</p>
+</div>
+
+<!-- content -->
+<div class="content" role="main">
+  <!-- Resources -->
+  <h2>สถานการณ์ผู้ติดเชื้อ COVID-19 ในประเทศไทย</h2>
+  <p>อัพเดทรายวัน</p>
+
+  <div class="card-container">
+    <a class="card">
+      <span>new_case</span>
+    </a>
+
+    <a class="card">
+      <span>total_case</span>
+
+    </a>
+
+    <a class="card">
+      <span>new_death</span>
+
+    </a>
+
+    <a class="card">
+      <span>total_death</span>
+    </a>
+
+
+    <a class="card">
+      <span>update_date</span>
+
+    </a>
+    <app-covid19 class="tablecovid"></app-covid19>
+
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+      Love Angular&nbsp;
+  </footer>
+
+
+</div>
+
+<router-outlet></router-outlet>

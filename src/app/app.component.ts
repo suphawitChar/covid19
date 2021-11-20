@@ -10,7 +10,6 @@ export interface  PeriodicElement{
 
 const ELEMENT_DATA: PeriodicElement[] = [
 {txn_date: "2021-11-19", province: "กระบี่", new_case: 86, total_case: 9376},
-{txn_date: "2021-11-19", province: "กระบี่", new_case: 86, total_case: 9376},
 ];
 
 @Component({
