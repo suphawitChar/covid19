@@ -1,6 +1,6 @@
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-    <p>โรคติดเชื้อไวรัสโคโรนา 2019 (COVID-19)</p>
+  <p>โรคติดเชื้อไวรัสโคโรนา 2019 (COVID-19)</p>
 </div>
 
 <!-- content -->
@@ -8,44 +8,16 @@
   <!-- Resources -->
   <h2>สถานการณ์ผู้ติดเชื้อ COVID-19 ในประเทศไทย</h2>
   <p>อัพเดทรายวัน</p>
-
-  <div class="card-container">
-    <a class="card">
-      <span>new_case</span>
-    </a>
-
-    <a class="card">
-      <span>total_case</span>
-
-    </a>
-
-    <a class="card">
-      <span>new_death</span>
-
-    </a>
-
-    <a class="card">
-      <span>total_death</span>
-    </a>
-
-
-    <a class="card">
-      <span>update_date</span>
-
-    </a>
-    <app-covid19 class="tablecovid"></app-covid19>
-
-  </div>
-
-
-
-
-  <!-- Footer -->
-  <footer>
-      Love Angular&nbsp;
-  </footer>
-
-
+  <br>
+  <app-covid19today class="tablecovid"></app-covid19today>
+  <br>
+  <h2>สถานการณ์ผู้ติดเชื้อ COVID-19 รายจังหวัด</h2>
+  <br>
+  <app-covid19 class="tablecovid"></app-covid19>
+</div>
+<!-- Footer -->
+<div class="background p-4 text-white text-center">
+  <p>© 2021 Designed by Suphawit Charoensuk</p>
 </div>
 
 <router-outlet></router-outlet>
